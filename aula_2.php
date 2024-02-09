@@ -20,7 +20,7 @@
     $dv = $a / $b;
 
     var_dump([$ad, $sb, $mt, $dv]);
-
+    
     ?>
 
 </body>
