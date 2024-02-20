@@ -32,24 +32,46 @@
     $y = 5;
 
     $x = $y; //Atribuição
-    echo $x . "<br>";
+    echo $x."<br>";
     var_dump($x);
     $x += $y; //Atribuição de adição
-    echo $x . "<br>";
+    echo $x."<br>";
     var_dump($x);
     $x -= $y; //Atribuição de subtração
-    echo $x . "<br>";
+    echo $x."<br>";
     var_dump($x);
     $x *= $y; //Atribuição de multiplicação
-    echo $x . "<br>";
+    echo $x."<br>";
     var_dump($x);
     $x /= $y; //Atribuição de divisão
-    echo $x . "<br>";
+    echo $x."<br>";
     var_dump($x);
     $x %= $y; //Atribuição de resto
-    echo $x . "<br>";
+    echo $x."<br>";
     var_dump($x);
+    echo "<br>";
 
+    //Operadores de comparação
+
+    $i = 10;
+    $j = 5;
+
+    var_dump($i == $j); //Igual
+    echo "<br>";
+    var_dump($i === $j); //Idêntico
+    echo "<br>";
+    var_dump($i != $j); //Diferente
+    echo "<br>";
+    var_dump($i !== $j); //Não idêntico
+    echo "<br>";
+    var_dump($i < $j); //Menor que
+    echo "<br>";
+    var_dump($i > $j); //Maior que
+    echo "<br>";
+    var_dump($i <= $j); //Menor ou igual
+    echo "<br>";
+    var_dump($i >= $j); //Maior ou igual
+    echo "<br>";
 
     ?>
 
