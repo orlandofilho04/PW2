@@ -21,6 +21,20 @@
 
     ?>
 
+    <h2>Exemplo 02 - </h2>
+
+    <?php   
+    $array = ["maçã", "pera", "uva", "banana", "laranja"];
+
+    echo "O array tem " . count($array) . " elementos <br> <br>";
+
+    $i = 0;
+    while ($i < count($array)) {
+        echo "O valor do array na posição $i é: $array[$i] <br>";
+        $i++;
+    }
+    ?>
+
 </body>
 
 </html>
