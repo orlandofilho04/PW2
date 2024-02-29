@@ -4,33 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repetição for</title>
+    <title>Repetição for each</title>
 </head>
 
 <body>
-    <h1>Estrutura de Repetição for</h1>
-    <h2>Exemplo 01 - Contador</h2>
+    <h1>Estrutura de Repetição for each</h1>
+    <h2>Exemplo 01 - listar array</h2>
     <?php
-
-    for ($x = 1; $x <= 10; $x++) {
-        echo "O valor de x é: $x <br>";
+    $array = ["maçã", "pera", "uva", "banana", "laranja"];
+    foreach ($array as $value) {
+        echo "O valor do array é: $value <br>";
     }
     ?>
 
     <h2>Exemplo 02 - </h2>
-
     <?php
-    $array = ["maçã", "pera", "uva", "banana", "laranja"];
-    //$array = [];
-    echo "O array tem " . count($array) . " elementos <br> <br>";
-
-    $i = 0;
-    for ($i = 0; $i < count($array); $i++) {
-        if (count($array) > 0) {
-            echo "O valor do array na posição $i é: $array[$i] <br>";
-        } else {
-            echo "O array está vazio";
-        }
+    $arraym = [["fruta" => "maçã"], ["fruta" => "pera"], ["fruta" => "uva"], ["fruta" => "banana"], ["fruta" => "laranja"]];
+    foreach ($arraym as $k => $value) {
+        echo "O valor do array é: " . $value["fruta"] . "<br>";
     }
     ?>
 
