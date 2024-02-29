@@ -25,15 +25,13 @@
     echo "O array tem " . count($array) . " elementos <br> <br>";
 
     $i = 0;
-    do {
+    for ($i = 0; $i < count($array); $i++) {
         if (count($array) > 0) {
             echo "O valor do array na posição $i é: $array[$i] <br>";
-            $i++;
         } else {
             echo "O array está vazio";
         }
-
-    } while ($i < count($array));
+    }
     ?>
 
 </body>
