@@ -11,16 +11,19 @@
     <?php
 
     $itens = array(
-        "Água" => 1.99,
-        "Coca" => 5.99,
-        "Energético" => 15.99
+        ["nome" => "Água", "preco" => 1.99],
+        ["nome" => "Coca", "preco" => 5.99]
     );
 
-    foreach ($itens as $nomeProduto => $preco) {
-        echo "Produto: $nomeProduto, Preço: R$ " . number_format($preco, 2, ',', '.') . "<br>";
+    foreach ($itens as $produto) {
+        $nome = $produto["nome"];
+        $preco = $produto["preco"];
+        echo "Produto: $nome, Preço: R$ " . number_format($preco, 2, ',', '.') . "<br>";
     }
 
     ?>
+
+
 </body>
 
 </html>
